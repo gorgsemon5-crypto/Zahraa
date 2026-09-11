@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#130b2b" />
+    <title>ليلة نور | عيد ميلاد سعيد</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor-glow"></div>
+    <canvas id="stars" aria-hidden="true"></canvas>
+    <header class="topbar">
+      <a class="brand" href="#home"><span>✦</span> ليلة نور</a>
+      <nav aria-label="التنقل الرئيسي"><a href="#story">الحكاية</a><a href="#moments">اللحظات</a><a href="#wishes">الأمنيات</a></nav>
+      <button class="sound-btn" id="soundButton" aria-label="تشغيل الموسيقى">♪ <span>الصوت</span></button>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">١١ • ٠٩ • ليلة لا تشبه سواها</p>
+          <h1>اليوم<br /><em>كل الكون</em><br />يحتفل بك.</h1>
+          <p class="hero-text">رحلة صغيرة وسط النجوم والذكريات، صُنعت لتذكّرك أن حضورك هو أجمل سبب للاحتفال.</p>
+          <div class="hero-actions"><a href="#cake" class="button primary">ابدئي الاحتفال <span>↙</span></a><button class="button ghost" id="confettiButton">رشّة سحر ✦</button></div>
+          <div class="scroll-note"><i></i> اسحبي لاكتشاف المفاجآت</div>
+        </div>
+        <div class="hero-art reveal">
+          <div class="orbit orbit-one"><span>✦</span></div><div class="orbit orbit-two"><span>♥</span></div>
+          <div class="moon"><span></span></div>
+          <div class="planet planet-pink"></div><div class="planet planet-gold"></div>
+          <div class="birthday-number"><small>الفصل</small><b>22</b><small>الجديد</small></div>
+          <p class="art-caption">ليلة من ذهب، ورد، وأحلام كبيرة.</p>
+        </div>
+      </section>
+
+      <section class="welcome section narrow reveal" id="story">
+        <p class="eyebrow">رسالة البداية</p>
+        <h2>مو بس عيد ميلاد...<br />هذا <em>احتفال بكل نسختك</em> الحلوة.</h2>
+        <p>بكل ضحكة صنعتِ فرق، وبكل حلم لسه في طريقه إليكِ. احتفظنا لكِ بمساحة هنا: تشبهيكِ تمامًا، دافئة، مشرقة، ومليانة احتمالات.</p>
+        <div class="quote-card"><span>“</span><p>كل سنة وأنتِ السبب اللي يخلي الأيام العادية تستحقّ الاحتفال.</p></div>
+      </section>
+
+      <section class="cake-section section" id="cake">
+        <div class="cake-copy reveal"><p class="eyebrow">طقس الاحتفال</p><h2>اطلبي أمنيتك<br />و<strong>اطفئي الشموع.</strong></h2><p>اضغطي على أي شمعة قبل ما يختفي ضوؤها. كل ضغطة تخبّي أمنية بين النجوم.</p><div class="wish-counter"><b id="candleCount">5</b><span>شموع تنتظر أمنياتك</span></div></div>
+        <div class="cake-stage reveal" aria-label="كعكة عيد ميلاد تفاعلية">
+          <div class="sparkles">✦ &nbsp; · &nbsp; ✦</div>
+          <div class="cake-3d" id="cake3d">
+            <button class="candle" style="--x:22%;--h:60px" aria-label="إطفاء شمعة"><i></i></button><button class="candle" style="--x:37%;--h:78px" aria-label="إطفاء شمعة"><i></i></button><button class="candle" style="--x:52%;--h:65px" aria-label="إطفاء شمعة"><i></i></button><button class="candle" style="--x:66%;--h:82px" aria-label="إطفاء شمعة"><i></i></button><button class="candle" style="--x:79%;--h:56px" aria-label="إطفاء شمعة"><i></i></button>
+            <div class="cake-top"><b>HAPPY<br />DAY</b></div><div class="cake-layer layer-one"></div><div class="cake-layer layer-two"></div><div class="cake-plate"></div>
+          </div>
+          <p id="cakePrompt">أطفئي الشموع لتبدئي.</p>
+        </div>
+      </section>
+
+      <section class="moments section" id="moments"><div class="section-heading reveal"><p class="eyebrow">ألبوم صغير</p><h2>محطات من <em>نورك</em></h2><p>مرّري البطاقات، وافتحي أي لحظة لسماع رسالتها.</p></div><div class="moment-grid">
+        <button class="memory-card tall reveal" data-memory="ضحكتك في التفاصيل الصغيرة هي واحدة من أجمل ذكرياتنا."><span class="memory-icon">☻</span><small>لحظة ٠١</small><b>الضحكة اللي<br />تنوّر المكان</b><i>↙</i></button>
+        <button class="memory-card gold reveal" data-memory="كل طريق جديد بدأ بشجاعتك، وكل خطوة كانت تستحق الفخر."><span class="memory-icon">✺</span><small>لحظة ٠٢</small><b>أحلام أكبر<br />من السماء</b><i>↙</i></button>
+        <button class="memory-card rose reveal" data-memory="أنتِ الملجأ الهادئ والرفيقة التي تجعل الأيام أخف."><span class="memory-icon">♡</span><small>لحظة ٠٣</small><b>قلب يعرف<br />كيف يحنو</b><i>↙</i></button>
+      </div></section>
+
+      <section class="wishes section" id="wishes"><div class="wish-orb"></div><div class="wishes-copy reveal"><p class="eyebrow">أمنية من القلب</p><h2>اكتبي أمنية<br />لـ <em>السنة الجديدة.</em></h2><p>أضيفيها إلى جرة الأمنيات. ستظهر هنا كنجمة صغيرة لا تنطفئ.</p></div><form class="wish-form reveal" id="wishForm"><label for="wish">أمنيتي لهذه السنة</label><textarea id="wish" maxlength="150" required placeholder="أتمنى أن..."></textarea><div><span id="charCount">0 / 150</span><button class="button primary" type="submit">أرسليها للنجوم ✦</button></div></form><div class="wish-jar" id="wishJar" aria-live="polite"><span>✦</span><span>✧</span><span>·</span></div></section>
+      <section class="closing section reveal"><p class="eyebrow">والآن...</p><h2>كل سنة وأنتِ<br /><em>الحكاية الأجمل.</em></h2><p>لا تتوقفي عن اختيار نفسك، صنع الدهشة، والذهاب نحو كل ما يشبه قلبك.</p><button class="button primary" id="finalCelebrate">احتفلوا معي ✦</button></section>
+    </main>
+    <footer>صُنعت بحب، لروح تستحق الكون كله <span>♥</span></footer>
+    <div class="memory-modal" id="memoryModal" aria-hidden="true"><div class="modal-content"><button id="closeModal" aria-label="إغلاق">×</button><span>✦</span><p id="memoryText"></p></div></div>
+    <div id="toast" role="status"></div><script src="script.js"></script>
+  </body>
+</html>
